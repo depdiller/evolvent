@@ -1,0 +1,2 @@
+C:\MinGW\bin\ar.exe qc libev_lib.a CMakeFiles/ev_lib.dir/src/Evolvent.cpp.obj
+C:\MinGW\bin\ranlib.exe libev_lib.a

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/stani/CLionProjects/evolvent/evolvent_lib/src/Evolvent.cpp
+Evolvent.h
+C:/Users/stani/CLionProjects/evolvent/evolvent_lib/src/Evolvent.h
+
+C:/Users/stani/CLionProjects/evolvent/evolvent_lib/src/Evolvent.h
+cmath
+-
+iostream
+-
+cstring
+-
+cstdio
+-
+
