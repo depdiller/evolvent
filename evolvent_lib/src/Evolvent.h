@@ -17,7 +17,7 @@ namespace lab2 {
         Point(double x0 = 0, double y0 = 0) : x(x0), y(y0) {}
         // getter
         double getX() const { return this->x; }
-        double getY() const { return this->x; }
+        double getY() const { return this->y; }
     };
 
     class Evolvent {
@@ -26,7 +26,7 @@ namespace lab2 {
     public:
         Evolvent(double rad = 1);
         // setter
-        Evolvent& setR(double r0) { r = r0; return *this; }
+        Evolvent& setR(double r0);
         //getter
         double getR() const{ return r; }
         //

@@ -1,3 +1,8 @@
-C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/CMakeFiles/evolvent.dir
 C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/evolvent_lib/CMakeFiles/evolvent.dir
+C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/evolvent_lib/CMakeFiles/edit_cache.dir
+C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/evolvent_lib/CMakeFiles/rebuild_cache.dir
+C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/test_main/CMakeFiles/test_main.dir
+C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/test_main/CMakeFiles/edit_cache.dir
+C:/Users/stani/CLionProjects/evolvent/cmake-build-debug/test_main/CMakeFiles/rebuild_cache.dir

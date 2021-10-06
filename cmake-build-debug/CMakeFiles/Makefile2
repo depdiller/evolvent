@@ -62,42 +62,101 @@ CMAKE_BINARY_DIR = C:\Users\stani\CLionProjects\evolvent\cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/evolvent.dir/all
+all: evolvent_lib/all
+all: test_main/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall:
+preinstall: evolvent_lib/preinstall
+preinstall: test_main/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/evolvent.dir/clean
+clean: evolvent_lib/clean
+clean: test_main/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/evolvent.dir
+# Directory level rules for directory evolvent_lib
+
+# Recursive "all" directory target.
+evolvent_lib/all: evolvent_lib/CMakeFiles/evolvent.dir/all
+.PHONY : evolvent_lib/all
+
+# Recursive "preinstall" directory target.
+evolvent_lib/preinstall:
+.PHONY : evolvent_lib/preinstall
+
+# Recursive "clean" directory target.
+evolvent_lib/clean: evolvent_lib/CMakeFiles/evolvent.dir/clean
+.PHONY : evolvent_lib/clean
+
+#=============================================================================
+# Directory level rules for directory test_main
+
+# Recursive "all" directory target.
+test_main/all: test_main/CMakeFiles/test_main.dir/all
+.PHONY : test_main/all
+
+# Recursive "preinstall" directory target.
+test_main/preinstall:
+.PHONY : test_main/preinstall
+
+# Recursive "clean" directory target.
+test_main/clean: test_main/CMakeFiles/test_main.dir/clean
+.PHONY : test_main/clean
+
+#=============================================================================
+# Target rules for target evolvent_lib/CMakeFiles/evolvent.dir
 
 # All Build rule for target.
-CMakeFiles/evolvent.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/build
+evolvent_lib/CMakeFiles/evolvent.dir/all:
+	$(MAKE) $(MAKESILENT) -f evolvent_lib\CMakeFiles\evolvent.dir\build.make evolvent_lib/CMakeFiles/evolvent.dir/depend
+	$(MAKE) $(MAKESILENT) -f evolvent_lib\CMakeFiles\evolvent.dir\build.make evolvent_lib/CMakeFiles/evolvent.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\stani\CLionProjects\evolvent\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target evolvent"
-.PHONY : CMakeFiles/evolvent.dir/all
+.PHONY : evolvent_lib/CMakeFiles/evolvent.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/evolvent.dir/rule: cmake_check_build_system
+evolvent_lib/CMakeFiles/evolvent.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stani\CLionProjects\evolvent\cmake-build-debug\CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/evolvent.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 evolvent_lib/CMakeFiles/evolvent.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stani\CLionProjects\evolvent\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/evolvent.dir/rule
+.PHONY : evolvent_lib/CMakeFiles/evolvent.dir/rule
 
 # Convenience name for target.
-evolvent: CMakeFiles/evolvent.dir/rule
+evolvent: evolvent_lib/CMakeFiles/evolvent.dir/rule
 .PHONY : evolvent
 
 # clean rule for target.
-CMakeFiles/evolvent.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/clean
-.PHONY : CMakeFiles/evolvent.dir/clean
+evolvent_lib/CMakeFiles/evolvent.dir/clean:
+	$(MAKE) $(MAKESILENT) -f evolvent_lib\CMakeFiles\evolvent.dir\build.make evolvent_lib/CMakeFiles/evolvent.dir/clean
+.PHONY : evolvent_lib/CMakeFiles/evolvent.dir/clean
+
+#=============================================================================
+# Target rules for target test_main/CMakeFiles/test_main.dir
+
+# All Build rule for target.
+test_main/CMakeFiles/test_main.dir/all: evolvent_lib/CMakeFiles/evolvent.dir/all
+	$(MAKE) $(MAKESILENT) -f test_main\CMakeFiles\test_main.dir\build.make test_main/CMakeFiles/test_main.dir/depend
+	$(MAKE) $(MAKESILENT) -f test_main\CMakeFiles\test_main.dir\build.make test_main/CMakeFiles/test_main.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\stani\CLionProjects\evolvent\cmake-build-debug\CMakeFiles --progress-num=3,4 "Built target test_main"
+.PHONY : test_main/CMakeFiles/test_main.dir/all
+
+# Build rule for subdir invocation for target.
+test_main/CMakeFiles/test_main.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stani\CLionProjects\evolvent\cmake-build-debug\CMakeFiles 4
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_main/CMakeFiles/test_main.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\stani\CLionProjects\evolvent\cmake-build-debug\CMakeFiles 0
+.PHONY : test_main/CMakeFiles/test_main.dir/rule
+
+# Convenience name for target.
+test_main: test_main/CMakeFiles/test_main.dir/rule
+.PHONY : test_main
+
+# clean rule for target.
+test_main/CMakeFiles/test_main.dir/clean:
+	$(MAKE) $(MAKESILENT) -f test_main\CMakeFiles\test_main.dir\build.make test_main/CMakeFiles/test_main.dir/clean
+.PHONY : test_main/CMakeFiles/test_main.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

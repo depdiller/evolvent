@@ -1,6 +1,5 @@
-cmake_minimum_required(VERSION 3.20)
-project(evolvent_lib)
+add_library(evolvent
+        src/Evolvent.cpp
+        src/Evolvent.h)
 
-set(CMAKE_CXX_STANDARD 23)
-
-add_library(ev_lib src/Evolvent.cpp src/Evolvent.h)
+target_include_directories(evolvent PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")

@@ -125,32 +125,21 @@ evolvent: cmake_check_build_system
 
 # fast build rule for target.
 evolvent/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/build
+	$(MAKE) $(MAKESILENT) -f evolvent_lib\CMakeFiles\evolvent.dir\build.make evolvent_lib/CMakeFiles/evolvent.dir/build
 .PHONY : evolvent/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+#=============================================================================
+# Target rules for targets named test_main
 
-# target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+# Build rule for target.
+test_main: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 test_main
+.PHONY : test_main
 
-main.i: main.cpp.i
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\evolvent.dir\build.make CMakeFiles/evolvent.dir/main.cpp.s
-.PHONY : main.cpp.s
+# fast build rule for target.
+test_main/fast:
+	$(MAKE) $(MAKESILENT) -f test_main\CMakeFiles\test_main.dir\build.make test_main/CMakeFiles/test_main.dir/build
+.PHONY : test_main/fast
 
 # Help Target
 help:
@@ -161,9 +150,7 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... evolvent
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... test_main
 .PHONY : help
 
 

@@ -10,8 +10,18 @@ namespace lab2 {
             throw std::invalid_argument("invalid radius");
         r = rad;
     }
+    Evolvent& Evolvent::setR(double r0){
+        if(r0 < 0)
+        {
+            throw std::invalid_argument("invalid radius");
+        }
+        r = r0;
+        return *this;
+    }
 
     double Evolvent::ro(double phi) {
+        if( phi < 0 || phi > 2 * PI)
+            throw std::invalid_argument("invalid phi");
         double ro = sqrt(1 + phi  * phi) * r;
         return ro;
     }
@@ -54,5 +64,3 @@ namespace lab2 {
             return "x = 0\ny = 0";
     }
 }
-
-
